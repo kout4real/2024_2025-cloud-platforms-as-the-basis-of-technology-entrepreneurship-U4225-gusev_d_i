@@ -17,37 +17,36 @@ University: ITMO University Faculty: FICT Course: Cloud platforms as the basis o
    - Захожу в вкладку IAM.
    - Создаю service account с ролью Storage Admin.
    - Нейминг: dgusev-sa-lab1.
+  
+<img width="736" alt="Screenshot 2024-10-28 at 17 41 55" src="https://github.com/user-attachments/assets/79180bde-1067-4a68-820b-4d0adff373a2">
 
-   ![Создание Service Account](screenshot1.png)
 
 3. **Создание виртуальной машины**
    - Создал минимальный Compute Engine (виртуальную машину) с Machine type e2-micro в режиме spot.
    - Нейминг: dgusev-vm-lab1.
+     
+<img width="541" alt="Screenshot 2024-10-28 at 17 44 30" src="https://github.com/user-attachments/assets/76214fee-d84a-4409-93d4-73b670d248b0">
 
-   ![Создание Виртуальной Машины](screenshot2.png)
+
 
 4. **Копирование файлов с использованием gsutil**
-   - С помощью утилиты gsutil нахожу бакет lab1-bucket-itmo копирую 3 файла в локальную папку на VM.
+   - С помощью утилиты gsutil нахожу бакет lab1-bucket-itmo копирую 3 файла в локальную папку на VM (gsutil cp -r gs:/ /lab1-bucket-itmo/
+./).
    - Выполняю команду ls -lah для отображения файлов на VM.
 
-   bash
-   gsutil cp gs://lab1-bucket-itmo/* /path/to/local/folder/
-   ls -lah /path/to/local/folder/
+ <img width="619" alt="Screenshot 2024-10-28 at 18 01 09" src="https://github.com/user-attachments/assets/6b07b3de-63b1-43a7-9115-7de419813a8a">
 
-   ![Копирование файлов](screenshot3.png)
 
 5. **Изменение прав доступа Service Account**
    - Меняю права доступа для моего service account с Storage Admin на Compute Viewer.
    - Повторяю пункт с копированием данных и замечаю, что возникла ошибка доступа.
-
-   ![Ошибка доступа](screenshot4.png)
+     
+<img width="250" alt="Screenshot 2024-10-28 at 18 02 37" src="https://github.com/user-attachments/assets/f31096e3-04d1-46aa-a90b-421b58b0f61f">
 
    **Выводы:** Изменение роли с Storage Admin на Compute Viewer ограничивает доступ к хранилищу, что подтверждает важность правильного назначения ролей в Google Cloud.
 
 6. **Удаление созданных сервисов**
    - Удаляю все созданные сервисы, включая виртуальную машину и service account.
-
-   ![Удаление сервисов](screenshot5.png)
 
 ## Результаты лабораторной работы
 В результате данной работы был получен доступ к Google Cloud, созданы необходимые сервисы, выполнены операции по копированию файлов и сделаны выводы о роли прав доступа в системе.
