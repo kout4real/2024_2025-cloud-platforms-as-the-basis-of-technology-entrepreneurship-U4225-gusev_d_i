@@ -41,7 +41,8 @@ University: ITMO University Faculty: FICT Course: Cloud platforms as the basis o
    - Повторяю пункт с копированием данных и замечаю, что возникла ошибка доступа.
      
 <img width="250" alt="Screenshot 2024-10-28 at 18 02 37" src="https://github.com/user-attachments/assets/f31096e3-04d1-46aa-a90b-421b58b0f61f">
-![Screenshot 2024-10-28 at 18 10 10](https://github.com/user-attachments/assets/93681397-9805-4f8b-a17e-04cab1ebbfee)
+
+![last screenshot](https://github.com/user-attachments/assets/46f46cfb-8b24-432c-b9d2-466a8ef7460a)
 
 
    **Выводы:** Изменение роли с Storage Admin на Compute Viewer ограничивает доступ к хранилищу, что подтверждает важность правильного назначения ролей в Google Cloud.
