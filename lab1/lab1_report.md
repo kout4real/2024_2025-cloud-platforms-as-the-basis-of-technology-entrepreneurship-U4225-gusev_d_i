@@ -28,7 +28,6 @@ University: ITMO University Faculty: FICT Course: Cloud platforms as the basis o
 <img width="541" alt="Screenshot 2024-10-28 at 17 44 30" src="https://github.com/user-attachments/assets/76214fee-d84a-4409-93d4-73b670d248b0">
 
 
-
 4. **Копирование файлов с использованием gsutil**
    - С помощью утилиты gsutil нахожу бакет lab1-bucket-itmo копирую 3 файла в локальную папку на VM (gsutil cp -r gs:/ /lab1-bucket-itmo/
 ./).
@@ -42,6 +41,8 @@ University: ITMO University Faculty: FICT Course: Cloud platforms as the basis o
    - Повторяю пункт с копированием данных и замечаю, что возникла ошибка доступа.
      
 <img width="250" alt="Screenshot 2024-10-28 at 18 02 37" src="https://github.com/user-attachments/assets/f31096e3-04d1-46aa-a90b-421b58b0f61f">
+![Screenshot 2024-10-28 at 18 10 10](https://github.com/user-attachments/assets/93681397-9805-4f8b-a17e-04cab1ebbfee)
+
 
    **Выводы:** Изменение роли с Storage Admin на Compute Viewer ограничивает доступ к хранилищу, что подтверждает важность правильного назначения ролей в Google Cloud.
 
