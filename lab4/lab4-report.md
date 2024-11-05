@@ -1,5 +1,5 @@
 |University: ITMO University Faculty: FICT Course: Cloud platforms as the basis of technology entrepreneurship ADD link Year: 2024/2025 Group: U4225 Author: Gusev Dimitrii Ivanovich Lab: Lab2 Date of create: 01.11.2024 Date of finished: 01.11.2024|
----------------------------------------------------------------------------------------------------------------------------------------------
+|-------------------------------------------------------------------------------------------------------------------------------------------|
 
 # Лабораторная работа №4: Разработка инфраструктуры MVP AI приложения
 
