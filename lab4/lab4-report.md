@@ -29,63 +29,70 @@
 
 3. Серверная логика:
 
-   • Развернута на App Engine для обработки запросов и выполнения бизнес-логики.
+   • Автоматически развернута на App Engine для обработки запросов и выполнения бизнес-логики.
 
 4. Обработка событий:
 
+• BigQuery: Для анализа больших объемов данных о пользователях через фильтры.
+
    • Используются Cloud Functions для выполнения фоновых задач и обработки триггеров.
 
-5. Хранение данных:
-
-   • BigQuery: Для анализа больших объемов данных о пользователях.
+6. Хранение данных:
 
    • Cloud Storage: Для хранения пользовательских данных и отчетов.
-
-   • Firestore: Для хранения профилей пользователей и их настроек в реальном времени.
+   
+<img width="893" alt="Screenshot 2024-11-08 at 19 00 15" src="https://github.com/user-attachments/assets/86d52918-6230-48ee-a6dc-caeffb12deb8">
 
 ▎Экономическая модель
 
 ▎Начальное состояние (до 100 пользователей)
 
++ Compute Engine 
+
+<img width="354" alt="Screenshot 2024-11-08 at 19 05 31" src="https://github.com/user-attachments/assets/a45b124f-4447-4d00-beb4-3ad5ee1fc0ac">
+
 • App Engine: $0 (Free tier)
 
 • Cloud Functions: $0 (Free tier)
 
-• BigQuery: $5 (1 TB запросов в месяц)
+• Cloud Storage: $0 (Free tier) (5GB)
 
-• Cloud Storage: $0 (Free tier)
-
-• Firestore: $0 (Free tier)
-
-Итого: ~$10 в месяц
+Итого: ~$31
+в месяц
 
 ▎Тестирование партнерами (до 1000 пользователей)
 
-• App Engine: $50 (2 F1 экземпляра)
++ Compute Engine 
+
+<img width="354" alt="Screenshot 2024-11-08 at 19 05 31" src="https://github.com/user-attachments/assets/a45b124f-4447-4d00-beb4-3ad5ee1fc0ac">
+
+• App Engine: $0 (Free tier)
 
 • Cloud Functions: $20 (увеличение триггеров)
 
-• BigQuery: $50 (10 TB запросов в месяц)
+• BigQuery: $58.50$ (2 GB/мес)
 
 • Cloud Storage: $10 (хранение данных)
 
-• Firestore: $20 (увеличение записей)
-
-Итого: ~$150 в месяц
+Итого: ~$120 в месяц
 
 ▎Продовое решение (до 10,000 пользователей)
 
-• App Engine: $300 (4 F1 экземпляра)
++ Compute Engine
+
+<img width="358" alt="Screenshot 2024-11-08 at 19 16 28" src="https://github.com/user-attachments/assets/25f793be-9c51-472f-b5c2-5ea51700edb5">
+
+• App Engine: $3.50/ мес
 
 • Cloud Functions: $100 (высокая нагрузка на триггеры)
 
-• BigQuery: $500 (100 TB запросов в месяц)
+• BigQuery: $500 (тариф on demand)
 
 • Cloud Storage: $100 (большое количество данных)
 
-• Firestore: $100 (большое количество записей)
+<img width="526" alt="Screenshot 2024-11-08 at 19 19 51" src="https://github.com/user-attachments/assets/332e4acb-08a6-48bb-905d-af1b91c2e0d1">
 
-Итого: ~$1,100 в месяц
+Итого: ~$1,000 в месяц
 
 ▎Обоснование выбора ресурсов
 
