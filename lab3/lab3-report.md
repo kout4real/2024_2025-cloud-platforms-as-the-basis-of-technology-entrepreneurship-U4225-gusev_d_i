@@ -36,7 +36,9 @@ University: ITMO University Faculty: FICT Course: Cloud platforms as the basis o
    - Создаю ссылки на загруженные файлы через контекстное меню.
 
 https://storage.googleapis.com/dgusev-lab3/Monica%20cat/IMG_0130.PNG
+
 https://storage.googleapis.com/dgusev-lab3/Monica%20cat/IMG_0260.PNG
+
 https://storage.googleapis.com/dgusev-lab3/Monica%20cat/IMG_0296.PNG
 
 7. **Удаление созданных сервисов**
